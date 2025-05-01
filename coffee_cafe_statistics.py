@@ -60,7 +60,7 @@ plt.ylabel("Mean Profit ($)")
 
 #calculate and display r^2 value
 r2_value = round(r2_score(y,x),2)
-plt.legend(plt.annotate(f'r^2 value = {r2_value}',xy = (21,89)))
+plt.annotate(f'r^2 value = {r2_value}',xy = (21,89))
 
 #perform linear fit to show relationship between cost and mean profit
 coeff = np.polyfit(x, y, 1)
